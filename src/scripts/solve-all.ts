@@ -30,12 +30,12 @@ async function main() {
   const files = findTSFiles(SRC_DIR);
 
   if (files.length === 0) {
-    console.log("No problem files found in src.");
+    console.info("No problem files found in src.");
     return;
   }
 
   for (const file of files) {
-    console.log(`\nExecution script: ${file}`);
+    console.info(`\nExecution script: ${file}`);
     await import(pathToFileURL(file).href);
   }
 }
