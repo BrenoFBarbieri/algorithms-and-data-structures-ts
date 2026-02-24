@@ -6,8 +6,8 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "solve": "tsx src/scripts/solve-one.ts",
-    "solve:all": "tsx src/scripts/solve-all.ts",
+    "solve": "tsx src/runners/run-one.ts",
+    "solve:all": "tsx src/runners/run-all.ts",
     "test": "tsx --test",
     "typecheck": "tsc --noEmit"
   },
