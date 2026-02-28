@@ -8,8 +8,11 @@
   "scripts": {
     "solve": "tsx src/runners/run-one.ts",
     "solve:all": "tsx src/runners/run-all.ts",
+    "typecheck": "tsc --noEmit",
     "test": "tsx --test",
-    "typecheck": "tsc --noEmit"
+    "test:name": "tsx --test --test-name-pattern",
+    "test:watch": "tsx --test --watch",
+    "test:coverage": "tsx --test --watch --experimental-test-coverage --test-reporter=lcov --test-reporter-destination=lcov.info "
   },
   "devDependencies": {
     "@types/node": "^25.3.0",
