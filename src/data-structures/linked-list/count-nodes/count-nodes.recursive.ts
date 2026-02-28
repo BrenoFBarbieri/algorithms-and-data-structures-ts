@@ -25,7 +25,7 @@
  *   when recursion depth becomes too large.
  */
 
-import type { ListNode } from "./ListNode.js";
+import type { ListNode } from "../ListNode.js";
 
 function countNodesRecursive(head: ListNode | null): number {
   if (!head) return 0;

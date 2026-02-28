@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
 
-import { UtilsLinkedList } from "./linked-list.utils.js";
+import { UtilsLinkedList } from "../utils/linked-list.utils.js";
 import { countNodesIterative } from "./count-nodes.iterative.js";
 import { countNodesRecursive } from "./count-nodes.recursive.js";
 

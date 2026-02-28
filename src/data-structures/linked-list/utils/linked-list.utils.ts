@@ -1,4 +1,4 @@
-import { ListNode } from "./ListNode.js";
+import { ListNode } from "../ListNode.js";
 
 /**
  * Creates a linked list from an array

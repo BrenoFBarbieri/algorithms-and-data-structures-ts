@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
 
-import { UtilsLinkedList } from "./linked-list.utils.js";
+import { UtilsLinkedList } from "../utils/linked-list.utils.js";
 import { getLastValueIterative } from "./get-last-value.iterative.js";
 import { getLastValueRecursive } from "./get-last-value.recursive.js";
 

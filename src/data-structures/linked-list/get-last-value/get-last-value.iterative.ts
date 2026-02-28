@@ -21,7 +21,7 @@
  * - Situations where only the final node matters.
  */
 
-import type { ListNode } from "./ListNode.js";
+import type { ListNode } from "../ListNode.js";
 
 function getLastValueIterative(head: ListNode | null): number | null {
   while (head?.next) {

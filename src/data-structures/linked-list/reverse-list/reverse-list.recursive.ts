@@ -45,7 +45,7 @@
  *   maximum call stack limits for very large inputs.
  */
 
-import type { ListNode } from "./ListNode.js";
+import type { ListNode } from "../ListNode.js";
 
 function reverseListRecursive(head: ListNode | null): ListNode | null {
   if (!head || !head.next) return head;

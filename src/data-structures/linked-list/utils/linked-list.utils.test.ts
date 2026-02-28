@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
 
-import type { ListNode } from "./ListNode.js";
+import type { ListNode } from "../ListNode.js";
 import { UtilsLinkedList } from "./linked-list.utils.js";
 
 describe("Linked List Utils - create list", () => {

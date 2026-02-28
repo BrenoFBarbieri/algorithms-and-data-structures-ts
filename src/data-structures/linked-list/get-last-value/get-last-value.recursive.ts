@@ -25,7 +25,7 @@
  *   when recursion depth becomes too large.
  */
 
-import type { ListNode } from "./ListNode.js";
+import type { ListNode } from "../ListNode.js";
 
 function getLastValueRecursive(head: ListNode | null): number | null {
   if (!head) return null;

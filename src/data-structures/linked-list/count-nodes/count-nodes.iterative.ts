@@ -21,7 +21,7 @@
  * - Scenarios where input size may grow significantly.
  */
 
-import type { ListNode } from "./ListNode.js";
+import type { ListNode } from "../ListNode.js";
 
 function countNodesIterative(head: ListNode | null): number {
   let count = 0;

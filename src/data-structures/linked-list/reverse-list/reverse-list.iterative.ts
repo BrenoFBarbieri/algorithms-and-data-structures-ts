@@ -43,7 +43,7 @@
  *     - `head` points to the remaining unreversed portion.
  */
 
-import type { ListNode } from "./ListNode.js";
+import type { ListNode } from "../ListNode.js";
 
 function reverseListIterative(head: ListNode | null): ListNode | null {
   let prev = null;
