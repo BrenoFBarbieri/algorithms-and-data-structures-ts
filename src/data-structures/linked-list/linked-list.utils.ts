@@ -6,20 +6,30 @@ import { ListNode } from "./ListNode.js";
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  */
-function createLinkedList(values: number[]): ListNode | null {
-  if (!values.length) return null;
+function create(values: number[]): ListNode | null {
+  const dummy = new ListNode(0);
+  let current = dummy;
 
-  let head = new ListNode(values[0]);
-  let current = head;
-
-  for (let i = 1; i < values.length; i++) {
-    current.next = new ListNode(values[i]);
+  for (const value of values) {
+    current.next = new ListNode(value);
     current = current.next;
   }
 
-  return head;
+  return dummy.next;
+}
+
+function toArray(head: ListNode | null): number[] {
+  const values: number[] = [];
+
+  while (head) {
+    values.push(head.val);
+    head = head.next;
+  }
+
+  return values;
 }
 
 export const UtilsLinkedList = {
-  create: createLinkedList,
+  create,
+  toArray,
 };
